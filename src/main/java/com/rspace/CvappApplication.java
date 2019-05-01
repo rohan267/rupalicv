@@ -7,7 +7,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("com.rspace")
+@ComponentScan("com.rspace.controller")
 public class CvappApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
