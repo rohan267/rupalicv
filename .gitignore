@@ -16,6 +16,7 @@ HELP.md
 *.iws
 *.iml
 *.ipr
+ src/main/java/com/rspace/.DS_Store
 
 ### NetBeans ###
 /nbproject/private/
