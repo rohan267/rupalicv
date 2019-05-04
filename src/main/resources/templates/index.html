@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Rohan Parekh - Curriculam Vitte</title>
 </head>
 <body>
-Index Page
+<p style="line-break: normal;">
+    <h1 th:text="${user.firstName + ' ' +  user.lastName}"></h1>
+    <span th:text="${user.email}"></span><br>
+    <span th:text="${user.phone}"></span>
+</p>
+
+
+<p>
+    <h2>Summary</h2>
+</p>
 </body>
 </html>

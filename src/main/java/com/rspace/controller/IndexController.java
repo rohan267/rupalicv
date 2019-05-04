@@ -1,12 +1,11 @@
 package com.rspace.controller;
 
 import com.rspace.model.User;
-import com.rspace.repositories.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 @RestController
 @RequestMapping(path = "/rohancv")
@@ -16,7 +15,8 @@ public class IndexController {
 //    private UserRepository userRepository;
 
     @GetMapping(path = "/index")
-    public String index(Model model) {
+    public ModelAndView index(Model model) {
+        ModelAndView mav = new ModelAndView("index");
 
         User user = new User();
         user.setFirstName("Rohan");
@@ -27,7 +27,7 @@ public class IndexController {
         user.setId(1L);
 
 //        model.addAttribute("user", userRepository.findById(1L));
-        model.addAttribute("user", user);
-        return "index";
+        mav.addObject("user", user);
+        return mav;
     }
 }
