@@ -1,1 +1,1 @@
-java -Dserver.port=$PORT $JAVA_OPTS -jar target/cvapp.war
+java -Dserver.port=$PORT $JAVA_OPTS -war target/cvapp.war
