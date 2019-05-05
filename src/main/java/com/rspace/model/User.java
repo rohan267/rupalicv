@@ -10,6 +10,7 @@ public class User {
     private String email;
     private String phone;
     private String linkedUrl;
+    private String about;
 
     @Override
     public boolean equals(Object o) {
@@ -22,12 +23,13 @@ public class User {
                 Objects.equals(address, user.address) &&
                 Objects.equals(email, user.email) &&
                 Objects.equals(linkedUrl, user.linkedUrl) &&
-                Objects.equals(phone, user.phone);
+                Objects.equals(phone, user.phone) &&
+                Objects.equals(about, user.about);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, address, email, phone, linkedUrl);
+        return Objects.hash(id, firstName, lastName, address, email, phone, linkedUrl, about);
     }
 
     public long getId() {
@@ -84,5 +86,13 @@ public class User {
 
     public void setLinkedUrl(String linkedUrl) {
         this.linkedUrl = linkedUrl;
+    }
+
+    public String getAbout() {
+        return about;
+    }
+
+    public void setAbout(String about) {
+        this.about = about;
     }
 }

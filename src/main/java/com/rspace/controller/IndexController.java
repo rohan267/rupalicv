@@ -43,6 +43,7 @@ public class IndexController {
         user.setPhone("+49-176-5902-6005");
         user.setAddress("Berlin, Germany");
         user.setLinkedUrl("https://www.linkedin.com/in/rohan-parekh/");
+        user.setAbout("");
         user.setId(1L);
 
 //        model.addAttribute("user", userRepository.findById(1L));
