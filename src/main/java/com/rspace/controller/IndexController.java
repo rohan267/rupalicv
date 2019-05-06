@@ -18,7 +18,7 @@ import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 
 @RestController
-@RequestMapping(path = "/")
+@RequestMapping(path = "/rohancv")
 public class IndexController {
 
     @Autowired
@@ -29,7 +29,7 @@ public class IndexController {
     @Autowired
     private ServletContext servletContext;
 
-    @GetMapping(path = "/")
+    @GetMapping(path = "/index")
     public ModelAndView index(Model model) {
         ModelAndView mav = new ModelAndView("/pages/index");
 
