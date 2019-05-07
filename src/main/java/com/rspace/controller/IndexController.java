@@ -34,8 +34,8 @@ public class IndexController {
         ModelAndView mav = new ModelAndView("/pages/index");
 
         User user = new User();
-        user.setFirstName("Rohan");
-        user.setLastName("Parekh");
+        user.setFirstName("ROHAN");
+        user.setLastName("PAREKH");
         user.setEmail("rohan.parekh.in@gmail.com");
         user.setPhone("+49-176-5902-6005");
         user.setAddress("Berlin, Germany");

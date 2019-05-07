@@ -56,13 +56,13 @@
         <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
         <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
             <div class="text-center">
-                <div class="author-img" style="background-image: url(/images/about.jpg);"></div>
                 <h1 id="colorlib-logo"><a href="index.html" th:text="${user.firstName + ' ' +  user.lastName}"></a></h1>
-                <span class="position"><a href="#">Full Stack Java Developer</a></span>
+                <span class="position">Full Stack Java Developer</span>
+                <div class="author-img" style="background-image: url(/images/about.jpg);"></div>
             </div>
             <nav id="colorlib-main-menu" role="navigation" class="navbar">
                 <div id="navbar" class="collapse">
-                    <ul>
+                    <ul style="float: right; text-align: right; padding-right: 1rem;">
                         <li class="active"><a href="#" data-nav-section="home">Home</a></li>
                         <li><a href="#" data-nav-section="about">About</a></li>
                         <li><a href="#" data-nav-section="skills">Skills</a></li>
@@ -75,15 +75,13 @@
             </nav>
 
             <div class="colorlib-footer">
+                <div style="height: 100px"></div>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/rohan-parekh/"><i class="icon-linkedin2"></i></a></li>
+                </ul>
                 <p><small>
                     This website is developed by me and deployed on Heroku
                 </small></p>
-                <ul>
-                    <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                    <li><a href="#"><i class="icon-twitter2"></i></a></li>
-                    <li><a href="#"><i class="icon-instagram"></i></a></li>
-                    <li><a href="#"><i class="icon-linkedin2"></i></a></li>
-                </ul>
             </div>
 
         </aside>
@@ -92,7 +90,7 @@
             <section id="colorlib-hero" class="js-fullheight" data-section="home">
                 <div class="flexslider js-fullheight">
                     <ul class="slides">
-                        <li style="background-image: url(/images/img_bg_1.jpg);">
+                        <li>
                             <div class="overlay"></div>
                             <div class="container-fluid">
                                 <div class="row">
@@ -100,14 +98,14 @@
                                         <div class="slider-text-inner js-fullheight">
                                             <div class="desc">
                                                 <h1>Hi! <br>I am <span th:text="${user.firstName}"></span></h1>
-                                                <p><a class="btn btn-primary btn-learn" href="/rohancv/downloadResume">Download CV File<i class="icon-download4"></i></a></p>
+                                                <p><a class="btn btn-primary btn-learn" href="/rohancv/downloadResume">Download CV<i class="icon-download4"></i></a></p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li style="background-image: url(../../static/images/img_bg_2.jpg);">
+                        <!--<li style="background-image: url(../../static/images/img_bg_2.jpg);">
                             <div class="overlay"></div>
                             <div class="container-fluid">
                                 <div class="row">
@@ -121,7 +119,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </section>
