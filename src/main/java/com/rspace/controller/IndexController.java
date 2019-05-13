@@ -23,7 +23,7 @@ public class IndexController {
     @Autowired
     private FileStorageService fileStorageService;
 
-    private final String resumeFile = "Rohan Parekh.pdf";
+    private final String resumeFile = "Rupali-Soni-Dev.pdf";
 
     @Autowired
     private ServletContext servletContext;
@@ -33,12 +33,12 @@ public class IndexController {
         ModelAndView mav = new ModelAndView("/pages/index");
 
         User user = new User();
-        user.setFirstName("ROHAN");
-        user.setLastName("PAREKH");
-        user.setEmail("rohan.parekh.in@gmail.com");
+        user.setFirstName("RUPALI");
+        user.setLastName("SONI");
+        user.setEmail("rupali.soni19@gmail.com");
         user.setPhone("+49-176-5902-6005");
         user.setAddress("Berlin, Germany");
-        user.setLinkedUrl("https://www.linkedin.com/in/rohan-parekh/");
+        user.setLinkedUrl("https://www.linkedin.com/in/rupali-soni/");
         user.setAbout("");
         user.setId(1L);
 
