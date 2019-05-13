@@ -36,7 +36,7 @@ public class IndexController {
         user.setFirstName("RUPALI");
         user.setLastName("SONI");
         user.setEmail("rupali.soni19@gmail.com");
-        user.setPhone("+49-176-5902-6005");
+        user.setPhone("+49-151-29594060");
         user.setAddress("Berlin, Germany");
         user.setLinkedUrl("https://www.linkedin.com/in/rupali-soni/");
         user.setAbout("");
